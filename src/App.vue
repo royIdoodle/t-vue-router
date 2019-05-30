@@ -8,6 +8,7 @@
       <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
       <router-link to="/pageA">page A</router-link>
       <router-link to="/pageB">page B</router-link>
+      <router-view></router-view>
     </p>
   </div>
 </template>
@@ -19,10 +20,6 @@ export default {
   name: 'app',
   components: {
     HelloWorld
-  },
-  mounted () {
-    // eslint-disable-next-line
-    console.log(this.$kk)
   }
 }
 </script>
