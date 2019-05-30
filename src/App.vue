@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Hello World"/>
+    <p>
+      <!-- 使用 router-link 组件来导航. -->
+      <!-- 通过传入 `to` 属性指定链接. -->
+      <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+      <router-link to="/pageA">page A</router-link>
+      <router-link to="/pageB">page B</router-link>
+    </p>
   </div>
 </template>
 
@@ -12,6 +19,10 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  mounted () {
+    // eslint-disable-next-line
+    console.log(this.$kk)
   }
 }
 </script>
