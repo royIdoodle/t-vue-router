@@ -8,8 +8,8 @@ Vue.use(TVueRouter)
 Vue.config.productionTip = false
 
 const routes = [
-  { path: '/pageA', component: pageA },
-  { path: '/pageB', component: pageB }
+  { path: 'pageA', component: pageA },
+  { path: 'pageB', component: pageB }
 ]
 
 const router = new TVueRouter({

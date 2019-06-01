@@ -6,8 +6,8 @@
       <!-- 使用 router-link 组件来导航. -->
       <!-- 通过传入 `to` 属性指定链接. -->
       <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
-      <router-link to="/pageA">page A</router-link>
-      <router-link to="/pageB">page B</router-link>
+      <router-link to="pageA">page A</router-link>
+      <router-link to="pageB">page B</router-link>
       <router-view></router-view>
     </p>
   </div>
@@ -20,6 +20,11 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  mounted () {
+    setTimeout(() => {
+      this.$router.push('pageB')
+    }, 2000)
   }
 }
 </script>
