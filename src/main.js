@@ -8,8 +8,20 @@ Vue.use(TVueRouter)
 Vue.config.productionTip = false
 
 const routes = [
-  { path: 'pageA', component: pageA },
-  { path: 'pageB', component: pageB }
+  {
+    path: 'pageA',
+    component: pageA,
+    // 路由守卫的测试， 延迟2秒后再进入'pageA'
+    beforeEnter (from, to, next) {
+      setTimeout(() => {
+        next()
+      }, 2000)
+    }
+  },
+  {
+    path: 'pageB',
+    component: pageB
+  }
 ]
 
 const router = new TVueRouter({

@@ -8,8 +8,9 @@
       <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
       <router-link to="pageA">page A</router-link>
       <router-link to="pageB">page B</router-link>
-      <router-view></router-view>
     </p>
+    <router-view></router-view>
+
   </div>
 </template>
 
